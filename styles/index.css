@@ -1,0 +1,170 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #e5e5e5;
+}
+/* container__ */
+.containers__ {
+  /* width: 100vw; */
+  /* height: 100vh; */
+}
+.row {
+  margin: 0;
+  padding: 0;
+}
+/* navbar____ */
+.navbar__ {
+  padding: 15px 40px;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar__ .search__ {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  background: #f8fafd;
+  border-radius: 30px;
+  padding: 15px;
+}
+.navbar__ .search__ .icon__ {
+  margin-right: 15px;
+}
+.navbar__ .search__ input {
+  outline: none;
+  border: none;
+  width: 100%;
+  background: transparent;
+  color: #0000003d;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+}
+.logout__ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logout__ .btn {
+  margin-left: 15px;
+}
+/* order__ */
+.order__ {
+  padding: 15px 40px;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* books__ */
+.books__ {
+  display: flex;
+  height: 83vh;
+}
+.books__ .bookmarks__ {
+  width: 30%;
+  background: #ffffff;
+  padding: 15px 40px;
+}
+.books__ .bookmarks__ .txt__ {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+.books__ .bookmarks__ p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 155.6%;
+  color: #000000;
+}
+.books__ .all_books__ {
+  width: 70%;
+  padding: 15px 0px 15px 40px;
+}
+.books__ .bookmarks__ .all_cards {
+}
+.books__ .bookmarks__ .all_cards .card__ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+  background: #f8fafd;
+  border-radius: 4px;
+  padding: 15px 10px;
+}
+.books__ .bookmarks__ .all_cards .card__ .one {
+  display: flex;
+  flex-direction: column;
+}
+.books__ .bookmarks__ .all_cards .card__ .two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.books__ .bookmarks__ .all_cards .card__ .one .title_ {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.books__ .bookmarks__ .all_cards .card__ .one .body_ {
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #757881;
+}
+.books__ .bookmarks__ .all_cards .card__ .two .open_ {
+  cursor: pointer;
+  margin-right: 9px;
+}
+.books__ .bookmarks__ .all_cards .card__ .two .delete_ {
+  cursor: pointer;
+}
+
+/* all_books__ */
+.all_books__ {
+  height: 83vh;
+  overflow-y: scroll;
+}
+.all_books__ .imgs_ {
+  background: #f8fafd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.all_books__ .content__ {
+  display: flex;
+  flex-direction: column;
+}
+.all_books__ .content__ .title_ {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 10px;
+  color: #000000;
+}
+.all_books__ .content__ .author_,
+.all_books__ .content__ .year_ {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #757881;
+}
+
+.pagination__ { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 40px;
+}
+.card_w{
+  height: 430px;
+}

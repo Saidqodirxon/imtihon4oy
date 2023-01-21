@@ -4,9 +4,295 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Books</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    /> -->
+    <!-- fontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="https://saidqodirxon.uz/srx.png" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/modalStyle.css" />
   </head>
   <body>
-    TEST
+    <div class="containers__">
+      <div class="navbar__">
+        <div class="logo">
+          <img src="./images/logo-kok.png" alt="Error..." />
+        </div>
+        <div class="search__">
+          <img src="./images/search.svg" class="icon__" alt="Error..." />
+          <input type="text" id="search" placeholder="Search books" />
+        </div>
+        <div class="logout__">
+          <a href="#">
+            <img src="./images/soon.svg" alt="Error..." />
+          </a>
+          <button class="btn btn-primary">Logout</button>
+        </div>
+      </div>
+      <div class="order__">
+        <span class="showing"
+          >Showing<span class="len_"> 0 </span> Result(<span class="price"></span>)</span
+        >
+        
+        <button class="btn btn-secondary">
+          <img src="./images/calendar (2).svg" alt="Error..." />
+          <span>Order by newest</span>
+        </button>
+      </div>
+      <div class="books__">
+        <div class="bookmarks__">
+          <span class="txt__">Bookmarks</span>
+          <p>If you don’t like to read, you haven’t found the right book</p>
+          <div id="all_cards" class="all_cards">
+            <div id="all_cards" class="card__">
+              <strong>Empty...</strong>
+              <!-- <div class="one">
+                <span class="title_">Python</span>
+                <span class="body_">David M. Beazley</span>
+              </div>
+              <div class="two">
+                <img
+                  src="./images/book-open.svg"
+                  class="open_"
+                  alt="Error..."
+                />
+                <img src="./images/delete.svg" class="delete_" alt="Error..." />
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="all_books__">
+          <div class="row" id="card_book">
+            <div class="col-3 mb-3">
+              <div class="card card_book card_w p-3">
+                <!-- <div class="imgs_">
+                  <img
+                    src="./images/Rectangle 356.png"
+                    class="img-fluid"
+                    alt="Error..."
+                  />
+                </div>
+                <div class="content__">
+                  <span class="title_">Python</span>
+                  <span class="author_">David M. Beazley</span>
+                  <span class="year_">2009</span>
+                  <div
+                    class="d-flex mt-2 align-items-center justify-content-between"
+                  >
+                    <button class="btn btn-warning">Bookmark</button>
+                    <button
+                      class="btn btn-primary"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasRight"
+                      aria-controls="offcanvasRight"
+                    >
+                      More Info
+                    </button>
+                  </div>
+                  <div class="btn btn btn-secondary mt-1">Read</div>
+                </div> -->
+                <h4>Searching...</h4>
+              </div>
+            </div>
+          </div>
+          <div class="pagination__">
+            <!-- <button>ok</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <header class="pt-4 border border-bottom-2">
+      <div class="wrapperone d-flex justify-content-between pb-4">
+        <div class="logo">
+          <img src="./images/logo-kok.png" alt="" />
+        </div>
+        <form
+          class="input-search btn border-light bg-secondary bg-opacity-25 rounded-5"
+        >
+          <i class="fa-solid fa-magnifying-glass w-auto mx-0 text-dark"></i>
+          <input
+            type="text"
+            class="w-75"
+            placeholder="Search books ..."
+            id="searchBook"
+          />
+        </form>
+        <div class="right-wrapper">
+          <i class="fa-solid fa-sun text-warning"></i>
+          <button class="btn btn-primary mx-3">Logout</button>
+        </div>
+      </div>
+      <div class="wrappertwo d-flex justify-content-between">
+        <h6 class="natijalar"></h6>
+        <p class="border bg-secondary p-2 rounded text-light">
+          <i class="fa-solid fa-calendar-days px-2"></i>Order by newest
+        </p>
+      </div>
+    </header> -->
+    <!-- <section class="p-3">
+      <div class="container-fluid">
+        <div class="row w-100 h-auto">
+          <div class="w-25 border border-0 h-auto h-100">
+            <div class="card mb-3 border-0 bg-body">
+              <div class="card-body">
+                <h5 class="card-title">Bookmarks</h5>
+                <p class="card-text w-75">
+                  If you don’t like to read, you haven’t found the right book
+                </p>
+              </div>
+            </div> 
+            <div class="katta-div w-100">
+              <div class="row">
+                <div class="card p-3">
+                  <img src="./images/bg.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <div class="card-text lh-1">
+                      <p class="h6">Python</p>
+                      <p>David M. Beazley</p>
+                      <p>2009</p>
+                    </div>
+                    <div class="btns d-flex gap-3 mb-3">
+                      <button class="w-50 btn btn-warning fw-bold">
+                        Bookmark
+                      </button>
+                      <button
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight"
+                        class="w-50 btn btn-light text-primary fw-bold"
+                      >
+                        More Info
+                      </button>
+                    </div>
+                    <button
+                      class="btn btn-light bg-secondary text-light fw-bold w-100"
+                    >
+                      Read
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- -->
+
+    <!-- <button
+      class="btn btn-primary"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"
+    >
+      OPEN
+    </button> -->
+
+    <div
+      class="offcanvas offcanvas-end"
+      style="width: 35%"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div id="offcanvas-header" class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Python</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div id="offcanvas-body" class="offcanvas-body">
+        <div class="book_malumot">
+          <div class="img_">
+            <img
+              src="./images/Rectangle 356.png"
+              class="img-fluid"
+              alt="Error..."
+            />
+          </div>
+          <p class="body_">
+            Culpa nulla pariatur cupidatat nisi incididunt ea do ipsum.
+            Incididunt quis mollit elit commodo cillum eiusmod reprehenderit
+            labore irure. Cillum et incididunt et nostrud exercitation quis aute
+            laboris non ut adipisicing. Laboris ad minim aute nulla proident
+            deserunt velit anim sunt aliquip ut sit. Exercitation aliquip
+            ullamco officia non aliqua. Sint deserunt aliquip veniam id eiusmod
+            sit consectetur mollit ea aliqua officia consequat. Magna non mollit
+            nisi est commodo voluptate aute id. Deserunt nostrud id do in nisi
+            mollit deserunt non. Pariatur fugiat cillum irure elit sint nisi ad
+            ipsum culpa deserunt cupidatat esse consequat laboris. Id aliquip
+            non consectetur esse proident duis Lorem.
+          </p>
+          <div class="author_btn_">
+            <div class="df mb-3">
+              <span>Author : </span>
+              <div class="btns__">
+                <a href="#" class="btn__">Jamal Kasper</a>
+                <a href="#" class="btn__">Author 2</a>
+              </div>
+            </div>
+            <div class="df mb-3">
+              <span> Published : </span>
+              <div class="btns__">
+                <a href="#" class="btn__">2019 </a>
+              </div>
+            </div>
+            <div class="df mb-3">
+              <span> Publishers:</span>
+              <div class="btns__">
+                <a href="#" class="btn__"> Hollman</a>
+              </div>
+            </div>
+            <div class="df mb-3">
+              <span>Categories: </span>
+              <div class="btns__">
+                <a href="#" class="btn__">Computers </a>
+              </div>
+            </div>
+            <div class="df mb-3">
+              <span> Pages Count:</span>
+              <div class="btns__">
+                <a href="#" class="btn__">346 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+      id="foter_modal"
+        class="offcanvas-header w-100"
+        style="display: flex; justify-content: end"
+      >
+        <a href="#" class="btn btn-secondary">Read</a>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

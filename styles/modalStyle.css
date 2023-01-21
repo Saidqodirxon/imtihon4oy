@@ -1,0 +1,47 @@
+.offcanvas {
+  background: #f8fafd;
+}
+.offcanvas-body {
+  background: #fff;
+}
+.book_malumot .img_ {
+  display: flex;
+  justify-content: center;
+}
+.book_malumot .body_ {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 170.3%;
+  color: #58667e;
+  margin-top: 20px;
+}
+.author_btn_ {
+  display: flex;
+  flex-direction: column;
+  margin-top: 33px;
+}
+.author_btn_ .df {
+  display: flex;
+  align-items: center;
+}
+.author_btn_ .df span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #222531;
+}
+.author_btn_ .df .btns__ {
+  display: flex;
+  align-items: center;
+}
+.author_btn_ .df .btns__ .btn__ {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px; 
+  color: #0d75ff;
+  background: #e9f3ff;
+  border-radius: 30px;
+  padding: 7px 20px;
+  margin-left: 10px;
+  text-decoration: none;
+}

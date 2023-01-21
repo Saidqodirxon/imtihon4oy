@@ -1,0 +1,36 @@
+body {
+  background: url(../../images/bg.jpg) !important;
+  .login-main {
+    display: flex !important;
+    background: #000;
+    width: 100vw;
+    height: 100vh;
+    opacity: 85%;
+
+    input,
+    button {
+      border: none;
+      background: transparent;
+      color: #fff;
+      outline: none;
+      letter-spacing: 0.1rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+  }
+
+  .login,
+  .password {
+    width: 100%;
+    padding: 0.5rem;
+    i {
+      margin-right: 1rem;
+    }
+  }
+  .forgot-pass {
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    color: #fff;
+  }
+}
